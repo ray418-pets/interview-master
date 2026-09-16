@@ -33,7 +33,7 @@
 
 ## 3. 依赖关系
 
-- **依赖**：core（数据库会话、匿名标识）、questions（题目实体）、engine（抽题 + 点评）、templates（配置解析）。
+- **依赖**：core（数据库会话）、users（匿名标识）、questions（题目实体）、engine（抽题 + 点评）、templates（配置解析）。
 - **被依赖**：reports（读取会话与问答记录生成报告）。
 
 ## 4. 文件结构
