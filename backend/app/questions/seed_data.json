@@ -1,0 +1,1322 @@
+[
+  {
+    "direction": "technical_frontend",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "技术-前端·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "虚拟DOM",
+      "响应式布局",
+      "事件循环"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-前端·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "响应式布局",
+      "事件循环",
+      "原型链"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "技术-前端·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "事件循环",
+      "原型链",
+      "跨域"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-前端·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "原型链",
+      "跨域",
+      "性能优化"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "技术-前端·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "虚拟DOM",
+      "响应式布局",
+      "事件循环"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-前端·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "响应式布局",
+      "事件循环",
+      "原型链"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "技术-前端·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "事件循环",
+      "原型链",
+      "跨域"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-前端·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "原型链",
+      "跨域",
+      "性能优化"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "技术-前端·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "虚拟DOM",
+      "响应式布局",
+      "事件循环"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-前端·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "响应式布局",
+      "事件循环",
+      "原型链"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "技术-前端·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "事件循环",
+      "原型链",
+      "跨域"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-前端·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "原型链",
+      "跨域",
+      "性能优化"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "技术-前端·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "虚拟DOM",
+      "响应式布局",
+      "事件循环"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-前端·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "响应式布局",
+      "事件循环",
+      "原型链"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "技术-前端·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "事件循环",
+      "原型链",
+      "跨域"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-前端·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "原型链",
+      "跨域",
+      "性能优化"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "技术-前端·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "虚拟DOM",
+      "响应式布局",
+      "事件循环"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-前端·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "响应式布局",
+      "事件循环",
+      "原型链"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "技术-前端·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "事件循环",
+      "原型链",
+      "跨域"
+    ]
+  },
+  {
+    "direction": "technical_frontend",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-前端·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "原型链",
+      "跨域",
+      "性能优化"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "技术-后端·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "索引",
+      "事务",
+      "ACID"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-后端·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "事务",
+      "ACID",
+      "缓存"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "技术-后端·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "ACID",
+      "缓存",
+      "消息队列"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-后端·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "缓存",
+      "消息队列",
+      "分布式锁"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "技术-后端·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "索引",
+      "事务",
+      "ACID"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-后端·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "事务",
+      "ACID",
+      "缓存"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "技术-后端·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "ACID",
+      "缓存",
+      "消息队列"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-后端·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "缓存",
+      "消息队列",
+      "分布式锁"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "技术-后端·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "索引",
+      "事务",
+      "ACID"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-后端·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "事务",
+      "ACID",
+      "缓存"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "技术-后端·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "ACID",
+      "缓存",
+      "消息队列"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-后端·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "缓存",
+      "消息队列",
+      "分布式锁"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "技术-后端·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "索引",
+      "事务",
+      "ACID"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-后端·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "事务",
+      "ACID",
+      "缓存"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "技术-后端·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "ACID",
+      "缓存",
+      "消息队列"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-后端·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "缓存",
+      "消息队列",
+      "分布式锁"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "技术-后端·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "索引",
+      "事务",
+      "ACID"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-后端·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "事务",
+      "ACID",
+      "缓存"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "技术-后端·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "ACID",
+      "缓存",
+      "消息队列"
+    ]
+  },
+  {
+    "direction": "technical_backend",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-后端·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "缓存",
+      "消息队列",
+      "分布式锁"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "技术-算法·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "时间复杂度",
+      "空间复杂度",
+      "动态规划"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-算法·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "空间复杂度",
+      "动态规划",
+      "二分查找"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "技术-算法·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "动态规划",
+      "二分查找",
+      "哈希表"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "技术-算法·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "二分查找",
+      "哈希表",
+      "贪心"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "技术-算法·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "时间复杂度",
+      "空间复杂度",
+      "动态规划"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-算法·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "空间复杂度",
+      "动态规划",
+      "二分查找"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "技术-算法·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "动态规划",
+      "二分查找",
+      "哈希表"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "技术-算法·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "二分查找",
+      "哈希表",
+      "贪心"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "技术-算法·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "时间复杂度",
+      "空间复杂度",
+      "动态规划"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-算法·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "空间复杂度",
+      "动态规划",
+      "二分查找"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "技术-算法·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "动态规划",
+      "二分查找",
+      "哈希表"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "技术-算法·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "二分查找",
+      "哈希表",
+      "贪心"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "技术-算法·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "时间复杂度",
+      "空间复杂度",
+      "动态规划"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-算法·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "空间复杂度",
+      "动态规划",
+      "二分查找"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "技术-算法·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "动态规划",
+      "二分查找",
+      "哈希表"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "技术-算法·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "二分查找",
+      "哈希表",
+      "贪心"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "技术-算法·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "时间复杂度",
+      "空间复杂度",
+      "动态规划"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-算法·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "空间复杂度",
+      "动态规划",
+      "二分查找"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "技术-算法·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "动态规划",
+      "二分查找",
+      "哈希表"
+    ]
+  },
+  {
+    "direction": "technical_algorithm",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "技术-算法·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "二分查找",
+      "哈希表",
+      "贪心"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "产品·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "用户需求",
+      "竞品分析",
+      "产品定位"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "产品·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "竞品分析",
+      "产品定位",
+      "优先级"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "产品·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "产品定位",
+      "优先级",
+      "数据指标"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "产品·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "优先级",
+      "数据指标",
+      "用户画像"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "产品·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "用户需求",
+      "竞品分析",
+      "产品定位"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "产品·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "竞品分析",
+      "产品定位",
+      "优先级"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "产品·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "产品定位",
+      "优先级",
+      "数据指标"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "产品·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "优先级",
+      "数据指标",
+      "用户画像"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "产品·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "用户需求",
+      "竞品分析",
+      "产品定位"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "产品·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "竞品分析",
+      "产品定位",
+      "优先级"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "产品·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "产品定位",
+      "优先级",
+      "数据指标"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "产品·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "优先级",
+      "数据指标",
+      "用户画像"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "产品·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "用户需求",
+      "竞品分析",
+      "产品定位"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "产品·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "竞品分析",
+      "产品定位",
+      "优先级"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "产品·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "产品定位",
+      "优先级",
+      "数据指标"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "产品·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "优先级",
+      "数据指标",
+      "用户画像"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "产品·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "用户需求",
+      "竞品分析",
+      "产品定位"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "产品·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "竞品分析",
+      "产品定位",
+      "优先级"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "产品·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "产品定位",
+      "优先级",
+      "数据指标"
+    ]
+  },
+  {
+    "direction": "product",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "产品·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "优先级",
+      "数据指标",
+      "用户画像"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "运营·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "用户增长",
+      "留存",
+      "转化率"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "运营·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "留存",
+      "转化率",
+      "活动策划"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "运营·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "转化率",
+      "活动策划",
+      "数据分析"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "运营·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "活动策划",
+      "数据分析",
+      "渠道"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "运营·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "用户增长",
+      "留存",
+      "转化率"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "运营·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "留存",
+      "转化率",
+      "活动策划"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "运营·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "转化率",
+      "活动策划",
+      "数据分析"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "运营·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "活动策划",
+      "数据分析",
+      "渠道"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "运营·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "用户增长",
+      "留存",
+      "转化率"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "运营·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "留存",
+      "转化率",
+      "活动策划"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "运营·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "转化率",
+      "活动策划",
+      "数据分析"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "运营·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "活动策划",
+      "数据分析",
+      "渠道"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "运营·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "用户增长",
+      "留存",
+      "转化率"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "运营·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "留存",
+      "转化率",
+      "活动策划"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "运营·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "转化率",
+      "活动策划",
+      "数据分析"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "运营·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "活动策划",
+      "数据分析",
+      "渠道"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "运营·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "用户增长",
+      "留存",
+      "转化率"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "运营·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "留存",
+      "转化率",
+      "活动策划"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "运营·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "转化率",
+      "活动策划",
+      "数据分析"
+    ]
+  },
+  {
+    "direction": "operations",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "运营·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "活动策划",
+      "数据分析",
+      "渠道"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "self_introduction",
+    "difficulty": "easy",
+    "content": "通用·自我介绍（基础）第1题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "沟通",
+      "团队协作",
+      "时间管理"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "通用·自我介绍（进阶）第2题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "团队协作",
+      "时间管理",
+      "解决问题"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "self_introduction",
+    "difficulty": "hard",
+    "content": "通用·自我介绍（深入）第3题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "时间管理",
+      "解决问题",
+      "自驱力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "self_introduction",
+    "difficulty": "medium",
+    "content": "通用·自我介绍（进阶）第4题：请做一个简短的自我介绍，重点说明你的核心优势与岗位匹配度。",
+    "reference_points": [
+      "解决问题",
+      "自驱力",
+      "抗压能力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "technical",
+    "difficulty": "easy",
+    "content": "通用·技术题（基础）第1题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "沟通",
+      "团队协作",
+      "时间管理"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "通用·技术题（进阶）第2题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "团队协作",
+      "时间管理",
+      "解决问题"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "technical",
+    "difficulty": "hard",
+    "content": "通用·技术题（深入）第3题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "时间管理",
+      "解决问题",
+      "自驱力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "technical",
+    "difficulty": "medium",
+    "content": "通用·技术题（进阶）第4题：请围绕岗位核心知识作答，并说明原理或实践要点。",
+    "reference_points": [
+      "解决问题",
+      "自驱力",
+      "抗压能力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "behavioral",
+    "difficulty": "easy",
+    "content": "通用·行为题（基础）第1题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "沟通",
+      "团队协作",
+      "时间管理"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "通用·行为题（进阶）第2题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "团队协作",
+      "时间管理",
+      "解决问题"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "behavioral",
+    "difficulty": "hard",
+    "content": "通用·行为题（深入）第3题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "时间管理",
+      "解决问题",
+      "自驱力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "behavioral",
+    "difficulty": "medium",
+    "content": "通用·行为题（进阶）第4题：请结合具体经历，说明你在该场景下的处理方式与结果。",
+    "reference_points": [
+      "解决问题",
+      "自驱力",
+      "抗压能力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "project_experience",
+    "difficulty": "easy",
+    "content": "通用·项目经验题（基础）第1题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "沟通",
+      "团队协作",
+      "时间管理"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "通用·项目经验题（进阶）第2题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "团队协作",
+      "时间管理",
+      "解决问题"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "project_experience",
+    "difficulty": "hard",
+    "content": "通用·项目经验题（深入）第3题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "时间管理",
+      "解决问题",
+      "自驱力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "project_experience",
+    "difficulty": "medium",
+    "content": "通用·项目经验题（进阶）第4题：请介绍一个你做过的项目，重点说明你的角色、难点与成果。",
+    "reference_points": [
+      "解决问题",
+      "自驱力",
+      "抗压能力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "open_ended",
+    "difficulty": "easy",
+    "content": "通用·开放题（基础）第1题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "沟通",
+      "团队协作",
+      "时间管理"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "通用·开放题（进阶）第2题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "团队协作",
+      "时间管理",
+      "解决问题"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "open_ended",
+    "difficulty": "hard",
+    "content": "通用·开放题（深入）第3题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "时间管理",
+      "解决问题",
+      "自驱力"
+    ]
+  },
+  {
+    "direction": "general",
+    "question_type": "open_ended",
+    "difficulty": "medium",
+    "content": "通用·开放题（进阶）第4题：请谈谈你对该话题的看法，并给出理由。",
+    "reference_points": [
+      "解决问题",
+      "自驱力",
+      "抗压能力"
+    ]
+  }
+]

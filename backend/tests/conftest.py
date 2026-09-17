@@ -10,6 +10,8 @@ from sqlalchemy.pool import StaticPool
 from app.core.database import Base
 from app.core.deps import get_db
 from app.main import create_app
+from app.questions.service import seed_if_empty as seed_questions
+from app.templates.service import seed_if_empty as seed_templates
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -24,6 +26,8 @@ def db_session():
     Base.metadata.create_all(bind=engine)
     TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
     db = TestingSessionLocal()
+    seed_questions(db)
+    seed_templates(db)
     try:
         yield db
     finally:
