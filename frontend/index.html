@@ -241,6 +241,20 @@
   }
   .custom-cta:hover { background: #A8322A; }
 
+  .error {
+    display: none;
+    color: var(--seal);
+    font-size: 0.875rem;
+    margin: 12px 0;
+  }
+  .error.visible { display: block; }
+
+  .loading {
+    color: var(--slate);
+    font-size: 0.9375rem;
+    padding: 16px 4px;
+  }
+
   /* ---------- footer ---------- */
   .footer {
     border-top: 1px solid var(--hairline);
@@ -273,7 +287,7 @@
     <div class="brand">面试陪练</div>
     <div class="topbar-right">
       <span class="user-name" id="username"></span>
-      <a class="nav-link" href="#">历史记录</a>
+      <a class="nav-link" href="history.html">历史记录</a>
       <a class="nav-link" href="#" id="logout">退出</a>
     </div>
   </div>
@@ -294,47 +308,8 @@
 
   <section class="section" id="templates">
     <h2 class="section-heading">选一套，直接开始</h2>
-    <ul class="template-list">
-      <li class="template-item">
-        <div class="template-main">
-          <div class="template-name">前端开发面试</div>
-          <div class="template-desc">技术-前端 · HTML、CSS、JavaScript 到框架与工程化</div>
-        </div>
-        <div class="template-side">
-          <span class="template-count">8 题</span>
-          <a class="template-start" href="#">开始</a>
-        </div>
-      </li>
-      <li class="template-item">
-        <div class="template-main">
-          <div class="template-name">后端开发面试</div>
-          <div class="template-desc">技术-后端 · 语言基础、数据库与系统设计</div>
-        </div>
-        <div class="template-side">
-          <span class="template-count">8 题</span>
-          <a class="template-start" href="#">开始</a>
-        </div>
-      </li>
-      <li class="template-item">
-        <div class="template-main">
-          <div class="template-name">产品经理面试</div>
-          <div class="template-desc">产品 · 产品思维、需求分析与数据</div>
-        </div>
-        <div class="template-side">
-          <span class="template-count">6 题</span>
-          <a class="template-start" href="#">开始</a>
-        </div>
-      </li>
-      <li class="template-item">
-        <div class="template-main">
-          <div class="template-name">通用行为面试</div>
-          <div class="template-desc">通用 · 自我介绍、项目经验与开放题</div>
-        </div>
-        <div class="template-side">
-          <span class="template-count">6 题</span>
-          <a class="template-start" href="#">开始</a>
-        </div>
-      </li>
+    <ul class="template-list" id="template-list">
+      <li class="loading">模板加载中…</li>
     </ul>
   </section>
 
@@ -344,23 +319,23 @@
     <div class="field">
       <span class="field-label">岗位方向</span>
       <div class="chips" id="direction-chips">
-        <button class="chip selected" type="button">技术-前端</button>
-        <button class="chip" type="button">技术-后端</button>
-        <button class="chip" type="button">技术-算法</button>
-        <button class="chip" type="button">产品</button>
-        <button class="chip" type="button">运营</button>
-        <button class="chip" type="button">通用</button>
+        <button class="chip selected" type="button" data-value="technical_frontend">技术-前端</button>
+        <button class="chip" type="button" data-value="technical_backend">技术-后端</button>
+        <button class="chip" type="button" data-value="technical_algorithm">技术-算法</button>
+        <button class="chip" type="button" data-value="product">产品</button>
+        <button class="chip" type="button" data-value="operations">运营</button>
+        <button class="chip" type="button" data-value="general">通用</button>
       </div>
     </div>
 
     <div class="field">
       <span class="field-label">题型 <span class="field-hint">（可多选）</span></span>
       <div class="chips" id="type-chips">
-        <button class="chip" type="button">自我介绍</button>
-        <button class="chip" type="button">技术题</button>
-        <button class="chip" type="button">行为题</button>
-        <button class="chip" type="button">项目经验题</button>
-        <button class="chip" type="button">开放题</button>
+        <button class="chip" type="button" data-value="self_introduction">自我介绍</button>
+        <button class="chip" type="button" data-value="technical">技术题</button>
+        <button class="chip" type="button" data-value="behavioral">行为题</button>
+        <button class="chip" type="button" data-value="project_experience">项目经验题</button>
+        <button class="chip" type="button" data-value="open_ended">开放题</button>
       </div>
     </div>
 
@@ -374,7 +349,8 @@
       <span class="stepper-total">共 8 题（1–20）</span>
     </div>
 
-    <button class="custom-cta" type="button">开始面试</button>
+    <div class="error" id="error"></div>
+    <button class="custom-cta" id="custom-start" type="button">开始面试</button>
   </section>
 
 </main>
@@ -385,17 +361,25 @@
 
 <script src="js/api.js"></script>
 <script>
-  // 登录守卫
-  const auth = getAuth();
-  if (!auth.token) {
-    window.location.href = 'login.html';
+  const auth = requireAuth();
+  if (!auth) {
+    // requireAuth 已跳转登录页
   }
-  document.getElementById('username').textContent = auth.username || '';
+  document.getElementById('username').textContent = (auth && auth.username) || '';
   document.getElementById('logout').addEventListener('click', (e) => {
     e.preventDefault();
     clearAuth();
     window.location.href = 'login.html';
   });
+
+  const errorEl = document.getElementById('error');
+  function showError(message) {
+    errorEl.textContent = message;
+    errorEl.classList.add('visible');
+  }
+  function hideError() {
+    errorEl.classList.remove('visible');
+  }
 
   // 岗位方向：单选
   const directionChips = document.querySelectorAll('#direction-chips .chip');
@@ -426,6 +410,96 @@
   document.getElementById('count-plus').addEventListener('click', () => {
     if (count < 20) { count += 1; renderCount(); }
   });
+
+  function selectedDirection() {
+    const sel = document.querySelector('#direction-chips .chip.selected');
+    return sel ? sel.dataset.value : null;
+  }
+
+  function selectedTypes() {
+    return Array.from(document.querySelectorAll('#type-chips .chip.selected'))
+      .map(c => c.dataset.value);
+  }
+
+  function buildSegments(types, total) {
+    const per = Math.floor(total / types.length);
+    const remainder = total % types.length;
+    return types.map((type, i) => ({ type, count: per + (i < remainder ? 1 : 0) }));
+  }
+
+  function startInterview(data) {
+    sessionStorage.setItem('pending_interview', JSON.stringify(data));
+    window.location.href = `interview.html?session_id=${data.session_id}`;
+  }
+
+  async function startWithTemplate(templateId) {
+    hideError();
+    try {
+      startInterview(await createInterview({ template_id: templateId }));
+    } catch (err) {
+      showError(err.message);
+    }
+  }
+
+  async function startCustom() {
+    hideError();
+    const direction = selectedDirection();
+    const types = selectedTypes();
+    if (!types.length) {
+      showError('请至少选择一种题型');
+      return;
+    }
+    if (count < types.length) {
+      showError(`题目数量不能少于已选题型数量（${types.length}）`);
+      return;
+    }
+    try {
+      startInterview(await createInterview({ direction, segments: buildSegments(types, count) }));
+    } catch (err) {
+      showError(err.message);
+    }
+  }
+
+  document.getElementById('custom-start').addEventListener('click', startCustom);
+
+  // 预设模板：动态渲染
+  async function loadTemplates() {
+    const list = document.getElementById('template-list');
+    try {
+      const templates = await getTemplates();
+      list.innerHTML = '';
+      templates.forEach(t => {
+        const li = document.createElement('li');
+        li.className = 'template-item';
+        const desc = (t.segments || []).map(s => `${typeLabel(s.type)} ${s.count} 题`).join('、');
+        li.innerHTML = `
+          <div class="template-main">
+            <div class="template-name"></div>
+            <div class="template-desc"></div>
+          </div>
+          <div class="template-side">
+            <span class="template-count"></span>
+            <a class="template-start" href="#">开始</a>
+          </div>`;
+        li.querySelector('.template-name').textContent = t.name;
+        li.querySelector('.template-desc').textContent = `${directionLabel(t.direction)} · ${desc}`;
+        li.querySelector('.template-count').textContent = `${totalQuestions(t.segments)} 题`;
+        li.querySelector('.template-start').addEventListener('click', (e) => {
+          e.preventDefault();
+          startWithTemplate(t.id);
+        });
+        list.appendChild(li);
+      });
+    } catch (err) {
+      list.innerHTML = '';
+      const li = document.createElement('li');
+      li.className = 'loading';
+      li.textContent = `加载失败：${err.message}`;
+      list.appendChild(li);
+    }
+  }
+
+  loadTemplates();
 </script>
 
 </body>
