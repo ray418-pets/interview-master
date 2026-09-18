@@ -2,6 +2,10 @@ const API_BASE = '/api';
 const TOKEN_KEY = 'auth_token';
 const USERNAME_KEY = 'auth_username';
 
+// Mock 模式：URL 带 ?mock=1 或 window.__USE_MOCK__ 为 true 时，认证接口走 mock 数据
+const USE_MOCK = (typeof window !== 'undefined')
+  && (window.__USE_MOCK__ || new URLSearchParams(location.search).get('mock') === '1');
+
 // ---------- 展示用文案映射 ----------
 const DIRECTION_LABELS = {
   technical_frontend: '技术-前端',
@@ -101,10 +105,12 @@ async function request(method, path, body) {
 
 // ---------- 业务 API ----------
 async function register(username, password) {
+  if (USE_MOCK && window.__mockRegister) return window.__mockRegister(username, password);
   return request('POST', '/auth/register', { username, password });
 }
 
 async function login(username, password) {
+  if (USE_MOCK && window.__mockLogin) return window.__mockLogin(username, password);
   return request('POST', '/auth/login', { username, password });
 }
 
