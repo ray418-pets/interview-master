@@ -79,6 +79,14 @@ function requireAuth() {
 
 // ---------- 请求封装 ----------
 async function request(method, path, body) {
+  if (USE_MOCK && window.__mockRequest) {
+    const payload = window.__mockRequest(method, path, body);
+    if (payload.code !== 0) {
+      throw new Error(payload.message || '请求失败');
+    }
+    return payload.data;
+  }
+
   const headers = { 'Content-Type': 'application/json' };
   const token = getToken();
   if (token) {
@@ -105,12 +113,10 @@ async function request(method, path, body) {
 
 // ---------- 业务 API ----------
 async function register(username, password) {
-  if (USE_MOCK && window.__mockRegister) return window.__mockRegister(username, password);
   return request('POST', '/auth/register', { username, password });
 }
 
 async function login(username, password) {
-  if (USE_MOCK && window.__mockLogin) return window.__mockLogin(username, password);
   return request('POST', '/auth/login', { username, password });
 }
 
