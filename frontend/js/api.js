@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+// 后端 API 地址：默认同源 /api；前后端分离启动时由 js/config.js 覆盖为后端完整地址
+const API_BASE = window.__API_BASE__ || '/api';
 const TOKEN_KEY = 'auth_token';
 const USERNAME_KEY = 'auth_username';
 
