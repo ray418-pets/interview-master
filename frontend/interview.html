@@ -4,294 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>面试进行中 · 面试陪练</title>
-<style>
-  :root {
-    --paper: #F2F4F5;
-    --ink: #14212B;
-    --seal: #C53A2E;
-    --slate: #5B6770;
-    --hairline: #D7DDE1;
-    --white: #FFFFFF;
-    --serif: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
-    --sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: inherit; text-decoration: none; }
-  button { font: inherit; cursor: pointer; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-
-  .topbar { border-bottom: 1px solid var(--hairline); background: var(--paper); }
-  .topbar-inner {
-    max-width: 1000px; margin: 0 auto; padding: 0 24px; height: 60px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .brand { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: 0.02em; }
-  .topbar-right { display: flex; align-items: center; gap: 20px; }
-  .user-name { font-size: 0.9375rem; color: var(--ink); }
-  .nav-link { font-size: 0.9375rem; color: var(--slate); }
-  .nav-link:hover { color: var(--ink); }
-
-  .interview { padding: 40px 0 80px; }
-
-  .progress-row {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 28px;
-  }
-  .progress { font-size: 0.9375rem; color: var(--slate); font-variant-numeric: tabular-nums; }
-  .finish-link {
-    font-size: 0.9375rem; color: var(--seal); font-weight: 600;
-    background: none; border: none; padding: 0;
-  }
-  .finish-link:hover { text-decoration: underline; }
-
-  .conversation { margin-bottom: 36px; }
-  .turn { padding: 20px 0; border-bottom: 1px solid var(--hairline); }
-  .turn:first-child { border-top: 1px solid var(--hairline); }
-  .turn-speaker { display: block; font-size: 0.8125rem; font-weight: 600; color: var(--slate); margin-bottom: 8px; }
-  .turn-q .turn-text { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; line-height: 1.55; }
-  .turn-a .turn-text { color: var(--ink); white-space: pre-wrap; }
-  .turn-f .turn-text { color: var(--slate); white-space: pre-wrap; }
-  .turn-f { background: var(--white); border-radius: 8px; padding: 16px 20px; margin-top: 8px; border: 1px solid var(--hairline); }
-
-  .current-question { padding: 24px; background: var(--white); border: 1px solid var(--hairline); border-radius: 10px; }
-  .current-label { font-size: 0.8125rem; font-weight: 600; color: var(--slate); margin-bottom: 12px; }
-  .current-text {
-    margin: 0 0 24px; font-family: var(--serif); font-size: 1.5rem; font-weight: 500; line-height: 1.55;
-  }
-  .answer-input {
-    width: 100%; min-height: 120px; padding: 14px; font: inherit; font-size: 1rem;
-    color: var(--ink); background: var(--paper); border: 1px solid var(--hairline); border-radius: 6px; resize: vertical;
-  }
-  .answer-input:focus { outline: none; border-color: var(--ink); background: var(--white); }
-
-  .hint { display: none; color: var(--slate); font-size: 0.875rem; margin-top: 12px; }
-  .hint.visible { display: block; }
-  .error { display: none; color: var(--seal); font-size: 0.875rem; margin-top: 12px; }
-  .error.visible { display: block; }
-
-  .submit-row { display: flex; align-items: center; justify-content: flex-end; gap: 16px; margin-top: 16px; }
-  .submit {
-    background: var(--seal); color: var(--white); font-size: 1rem; font-weight: 600;
-    padding: 12px 28px; border: none; border-radius: 6px;
-  }
-  .submit:hover { background: #A8322A; }
-  .submit:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  .done-box { padding: 32px; text-align: center; }
-  .done-box .done-text { font-family: var(--serif); font-size: 1.375rem; font-weight: 600; margin-bottom: 24px; }
-  .view-report {
-    display: inline-block; background: var(--seal); color: var(--white);
-    font-size: 1rem; font-weight: 600; padding: 14px 28px; border-radius: 6px;
-  }
-  .view-report:hover { background: #A8322A; }
-
-  :focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
-  @media (max-width: 640px) {
-    .current-text { font-size: 1.25rem; }
-  }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="interview">
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <div class="brand">面试陪练</div>
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt="">面试陪练</a>
     <div class="topbar-right">
       <span class="user-name" id="username"></span>
+      <a class="nav-link" href="index.html">开始面试</a>
       <a class="nav-link" href="history.html">历史记录</a>
       <a class="nav-link" href="#" id="logout">退出</a>
     </div>
   </div>
 </header>
 
-<main class="wrap interview">
+<main class="wrap-narrow interview">
 
   <div class="progress-row">
     <span class="progress" id="progress">准备中…</span>
     <button class="finish-link" id="finish" type="button">提前结束面试</button>
   </div>
+  <div class="progress-bar"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
 
   <div class="conversation" id="conversation"></div>
 
   <section class="current-question" id="current-block">
     <div class="current-label">面试官提问</div>
     <blockquote class="current-text" id="current-text"></blockquote>
-    <textarea class="answer-input" id="answer" placeholder="在这里输入你的回答…"></textarea>
-    <div class="hint" id="hint"></div>
-    <div class="error" id="error"></div>
+    <textarea class="textarea" id="answer" placeholder="在这里输入你的回答…"></textarea>
+    <div class="form-hint" id="hint"></div>
     <div class="submit-row">
-      <button class="submit" id="submit" type="button">提交回答</button>
+      <button class="btn btn-primary" id="submit" type="button">提交回答</button>
     </div>
   </section>
 
   <section class="done-box" id="done-block" style="display:none;">
-    <div class="done-text">面试已结束</div>
-    <a class="view-report" id="view-report" href="#">查看评估报告</a>
+    <div class="done-text" id="done-text">面试已结束</div>
+    <button class="btn btn-primary" id="view-report" type="button">查看评估报告</button>
   </section>
 
 </main>
 
 <script src="js/api.js"></script>
-<script>
-  const auth = requireAuth();
-  document.getElementById('username').textContent = (auth && auth.username) || '';
-  document.getElementById('logout').addEventListener('click', (e) => {
-    e.preventDefault();
-    clearAuth();
-    window.location.href = 'login.html';
-  });
-
-  const params = new URLSearchParams(location.search);
-  const sessionId = params.get('session_id');
-  let pending = {};
-  try { pending = JSON.parse(sessionStorage.getItem('pending_interview') || '{}'); } catch (e) {}
-
-  const progressEl = document.getElementById('progress');
-  const conversationEl = document.getElementById('conversation');
-  const currentBlock = document.getElementById('current-block');
-  const currentText = document.getElementById('current-text');
-  const answerEl = document.getElementById('answer');
-  const submitBtn = document.getElementById('submit');
-  const hintEl = document.getElementById('hint');
-  const errorEl = document.getElementById('error');
-  const doneBlock = document.getElementById('done-block');
-  const viewReport = document.getElementById('view-report');
-
-  let total = pending.total_questions || 0;
-  let current = pending.current_question || null;
-  let finished = false;
-
-  function showHint(message) {
-    hideError();
-    hintEl.textContent = message;
-    hintEl.classList.add('visible');
-  }
-  function hideHint() { hintEl.classList.remove('visible'); }
-  function showError(message) {
-    hideHint();
-    errorEl.textContent = message;
-    errorEl.classList.add('visible');
-  }
-  function hideError() { errorEl.classList.remove('visible'); }
-
-  function renderProgress() {
-    const idx = current ? current.round_index + 1 : 0;
-    progressEl.textContent = `第 ${idx} 题 / 共 ${total} 题`;
-  }
-
-  function renderCurrent() {
-    if (finished || !current) return;
-    currentText.textContent = current.content;
-    answerEl.value = '';
-    answerEl.disabled = false;
-    submitBtn.disabled = false;
-    hideHint();
-    hideError();
-    renderProgress();
-  }
-
-  function appendTurn(question, answer, feedback) {
-    const turn = document.createElement('div');
-    turn.className = 'turn';
-
-    const q = document.createElement('div');
-    q.className = 'turn-q';
-    q.innerHTML = '<span class="turn-speaker">面试官</span>';
-    const qt = document.createElement('div');
-    qt.className = 'turn-text';
-    qt.textContent = question;
-    q.appendChild(qt);
-
-    const a = document.createElement('div');
-    a.className = 'turn-a';
-    a.innerHTML = '<span class="turn-speaker">我的回答</span>';
-    const at = document.createElement('div');
-    at.className = 'turn-text';
-    at.textContent = answer;
-    a.appendChild(at);
-
-    const f = document.createElement('div');
-    f.className = 'turn-f';
-    f.innerHTML = '<span class="turn-speaker">点评</span>';
-    const ft = document.createElement('div');
-    ft.className = 'turn-text';
-    ft.textContent = feedback;
-    f.appendChild(ft);
-
-    turn.appendChild(q);
-    turn.appendChild(a);
-    turn.appendChild(f);
-    conversationEl.appendChild(turn);
-  }
-
-  function showFinish() {
-    currentBlock.style.display = 'none';
-    doneBlock.style.display = 'block';
-    viewReport.href = `report.html?session_id=${sessionId}`;
-    progressEl.textContent = `共 ${total} 题`;
-  }
-
-  async function handleSubmit() {
-    const answer = answerEl.value;
-    if (!answer.trim()) {
-      showHint('请先输入回答');
-      return;
-    }
-    submitBtn.disabled = true;
-    try {
-      const data = await submitAnswer(sessionId, answer);
-      if (data.is_finished) {
-        appendTurn(current.content, answer, data.feedback);
-        finished = true;
-        showFinish();
-      } else if (data.next_question && data.next_question.round_index === current.round_index) {
-        // 过短回答被后端拦截：不推进，仅提示
-        showHint(data.feedback);
-      } else {
-        appendTurn(current.content, answer, data.feedback);
-        current = data.next_question;
-        renderCurrent();
-      }
-    } catch (err) {
-      showError(err.message);
-    } finally {
-      submitBtn.disabled = false;
-    }
-  }
-
-  async function handleFinish() {
-    if (!confirm('确定提前结束面试吗？已完成题目将计入报告。')) return;
-    try {
-      await finishInterview(sessionId);
-      window.location.href = `report.html?session_id=${sessionId}`;
-    } catch (err) {
-      showError(err.message);
-    }
-  }
-
-  submitBtn.addEventListener('click', handleSubmit);
-  document.getElementById('finish').addEventListener('click', handleFinish);
-
-  if (!sessionId) {
-    showError('缺少会话参数，请从首页重新开始面试');
-    currentBlock.style.display = 'none';
-    document.getElementById('finish').style.display = 'none';
-  } else if (!current) {
-    showError('未找到面试上下文，请从首页重新开始面试');
-    currentBlock.style.display = 'none';
-  } else {
-    renderCurrent();
-  }
-</script>
-
+<script src="js/mock.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
