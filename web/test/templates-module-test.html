@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模板模块 Mock 测试 · 面试陪练</title>
+<link rel="stylesheet" href="harness.css">
+</head>
+<body>
+
+<main class="wrap">
+  <h1>模板模块 Mock 测试</h1>
+  <p class="sub">使用 mock 数据验证 getTemplates 接口的返回结构与字段完整性。</p>
+
+  <div class="summary" id="summary"></div>
+  <div class="results" id="results"></div>
+</main>
+
+<script>window.__USE_MOCK__ = true;</script>
+<script src="../js/mock.js"></script>
+<script src="../js/api.js"></script>
+<script src="harness.js"></script>
+<script>
+  function run() {
+    window.__mockReset();
+    clearAuth();
+
+    return register('alice', 'secret123')
+      .then(function () {
+        return test('获取模板列表返回非空数组', function () {
+          return getTemplates().then(function (list) {
+            assert(Array.isArray(list), '应返回数组');
+            assert(list.length > 0, '模板列表不应为空');
+          });
+        });
+      })
+      .then(function () {
+        return test('每个模板字段完整', function () {
+          return getTemplates().then(function (list) {
+            list.forEach(function (t) {
+              assert(typeof t.id === 'number', 'id 应为数字');
+              assert(typeof t.name === 'string' && t.name, 'name 应为非空字符串');
+              assert(typeof t.direction === 'string' && t.direction, 'direction 应为非空字符串');
+              assert(Array.isArray(t.segments), 'segments 应为数组');
+            });
+          });
+        });
+      })
+      .then(function () {
+        return test('segments 项包含 type 与 count', function () {
+          return getTemplates().then(function (list) {
+            list.forEach(function (t) {
+              t.segments.forEach(function (s) {
+                assert(typeof s.type === 'string' && s.type, 'segment.type 应为非空字符串');
+                assert(typeof s.count === 'number' && s.count >= 1, 'segment.count 应为 >=1 的数字');
+              });
+            });
+          });
+        });
+      })
+      .then(renderResults);
+  }
+
+  run();
+</script>
+
+</body>
+</html>

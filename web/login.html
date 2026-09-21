@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录 · 面试陪练</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+<main class="auth-shell">
+  <div class="auth-head">
+    <img class="auth-logo" src="assets/logo-mark.svg" alt="面试陪练">
+    <h1 class="auth-title" id="title">登录</h1>
+    <p class="auth-sub" id="subtitle">用一个账号，保存你的每次练习记录</p>
+  </div>
+
+  <form id="form">
+    <div class="field">
+      <label class="field-label" for="username">用户名</label>
+      <input class="input" id="username" autocomplete="username" required>
+    </div>
+    <div class="field">
+      <label class="field-label" for="password">密码</label>
+      <input class="input" id="password" type="password" autocomplete="current-password" required>
+    </div>
+    <div class="form-error" id="error"></div>
+    <button class="btn btn-primary btn-block" id="submit" type="submit">登录</button>
+  </form>
+
+  <div class="auth-switch">还没有账号？<a id="switch-link">注册</a></div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/mock.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
