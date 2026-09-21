@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="面试陪练">
+  <rect width="32" height="32" rx="7" fill="#C53A2E"/>
+  <path d="M9 10h14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-5l-3.5 3.5a.5.5 0 0 1-.85-.35V19H9a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1z" fill="#FFFFFF"/>
+  <circle cx="12.5" cy="14" r="1.2" fill="#C53A2E"/>
+  <circle cx="16" cy="14" r="1.2" fill="#C53A2E"/>
+  <circle cx="19.5" cy="14" r="1.2" fill="#C53A2E"/>
+</svg>

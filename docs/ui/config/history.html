@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>历史记录 · 面试陪练 UI 原型</title>
+<link rel="stylesheet" href="../css/ui.css">
+</head>
+<body data-page="history">
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="config.html"><img src="../assets/logo-mark.svg" alt="">面试陪练</a>
+    <div class="topbar-right">
+      <span class="user-name">alice</span>
+      <a class="nav-link" href="config.html">开始面试</a>
+      <a class="nav-link active" href="history.html">历史记录</a>
+      <a class="nav-link" href="login.html">退出</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap history">
+  <div class="page-head">
+    <h1 class="page-title">历史记录</h1>
+    <span class="page-count" id="count"></span>
+  </div>
+  <ul class="list" id="history-list">
+    <li class="state">加载中…</li>
+  </ul>
+</main>
+
+<script src="../js/prototype.js"></script>
+</body>
+</html>
