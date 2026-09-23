@@ -1,7 +1,9 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.core.database import Base, SessionLocal, engine
 from app.core.handlers import register_exception_handlers
@@ -16,6 +18,9 @@ from app.templates.router import router as templates_router
 from app.templates.service import seed_if_empty as seed_templates
 from app.users import models  # noqa: F401
 from app.users.router import router as auth_router
+
+# 前端静态文件目录（项目根/frontend）
+FRONTEND_DIR = Path(__file__).resolve().parent.parent.parent / "frontend"
 
 
 @asynccontextmanager
@@ -42,6 +47,9 @@ def create_app() -> FastAPI:
     app.include_router(templates_router)
     app.include_router(interviews_router)
     app.include_router(reports_router)
+    # 托管前端静态文件：单服务联动，/api 路由优先，其余落到静态文件
+    if FRONTEND_DIR.is_dir():
+        app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
     return app
 
 
